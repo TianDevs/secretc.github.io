@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Confession</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1> MESSEGE DELIVERY PO 🫣</h1>
+    <button class="btn" onclick="revealMessage()">Click mo po ito</button>
+    <p class="message" id="confession"></p>
+
+    <div class="choices" id="choices" style="display: none;">
+      <button class="yes-btn" onclick="sayYes()">Open Messege 💖</button>
+      <button class="no-btn" id="noBtn" onmouseover="moveNo()">No 🙅‍♀️</button>
+    </div>
+
+    <!-- Message icon after YES -->
+    <div id="msgIcon" class="msg-icon" onclick="openFrame()">📩</div>
+
+    <!-- Frame / modal for long confession -->
+    <div id="confessionFrame" class="frame">
+      <div class="frame-content">
+        <span class="close" onclick="closeFrame()">&times;</span>
+        <h2>Hello, Gorgeous!</h2>
+        <p id="longConfession"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+    <audio id="bgMusic" src="Can't Help Falling In Love - Elvis Presley - Violin cover.mp3" loop></audio>
+</html>
